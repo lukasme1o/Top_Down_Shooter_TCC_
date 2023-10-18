@@ -12,7 +12,7 @@ exit;
 	switch(estado){
 	case "parado":
 		if(instance_exists(obj_player)){
-		var range = 20;
+		var range = 50;
 		var linha = collision_line(x,y,obj_player.x,obj_player.y, obj_parede,false, false);
 		if(distance_to_object(obj_player) <= range and !linha){
 			//Seguir Jogador

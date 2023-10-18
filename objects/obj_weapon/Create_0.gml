@@ -137,4 +137,4 @@ weapon_x = 0;
 weapon_y = 0;
 can_shoot = true;
 
-scr_mudar_arma(self, 3);
+scr_mudar_arma(self, 0);

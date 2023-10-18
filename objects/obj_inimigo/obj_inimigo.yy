@@ -15,10 +15,7 @@
     "name": "Inimgos",
     "path": "folders/Objetos/Inimgos.yy",
   },
-  "parentObjectId": {
-    "name": "par_inimigos",
-    "path": "objects/par_inimigos/par_inimigos.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

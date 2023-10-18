@@ -6,7 +6,6 @@ draw_text_transformed(150,55, "Salas Concluídas: " + salas_texto, 2,2,0);
 
 #region Pause
 
-
 //Escurecer a tela ao apertar pause
 if(global.pause){
 	desenha_pause()

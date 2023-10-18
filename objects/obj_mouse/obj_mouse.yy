@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "Telas",
+    "path": "folders/Objetos/Telas.yy",
   },
   "parentObjectId": null,
   "persistent": true,

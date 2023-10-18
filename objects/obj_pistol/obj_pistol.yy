@@ -13,7 +13,7 @@
     "name": "obj_weapon_drop",
     "path": "objects/obj_weapon_drop/obj_weapon_drop.yy",
   },
-  "persistent": false,
+  "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,

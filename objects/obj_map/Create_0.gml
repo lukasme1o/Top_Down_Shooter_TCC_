@@ -4,7 +4,6 @@ room_width = cell_t * size;
 room_height = room_width div 2;
 cell_h = room_width div cell_t;
 cell_v = room_height div cell_t;
-
 grid = ds_grid_create(cell_h, cell_v);
 ds_grid_clear(grid,0);
 randomize();
@@ -12,8 +11,12 @@ var dir = irandom(5);
 var xx = cell_h div 2;
 var yy = cell_v div 2;
 var chances = 1;
+
 //Passos da Sala
 var passos = 200;
+
+//Player Spawn
+player = false;
 
 //Inimigos Máximos
 var inimigo_maxEnergia = 5;
@@ -69,6 +72,7 @@ for(var xx = 0; xx < cell_h; xx ++){
 
 
 	for (var yy = 0 ; yy < cell_v; yy++){
+		
 		if(grid[# xx, yy] == 0){
 			//Colocar parade
 			instance_create_layer(xx * cell_t, yy *cell_t, "Instances", obj_parede);
@@ -78,11 +82,16 @@ for(var xx = 0; xx < cell_h; xx ++){
 		if(grid[# xx, yy] == 1){
 			var x1 = xx *cell_t + cell_t/2;
 			var y1 = yy *cell_t + cell_t/2;
+			
 	
 			//Criar Objetos
-			if(!instance_exists(obj_player)){
-				instance_create_layer(x1, y1, "Instances",obj_player);
+			if(player = false){
+			
+			instance_create_layer(x1, y1, "Instances",obj_player_spawn);
+			player = true;
 			}
+			
+			
 			//Criar Objetos inimigos 
 			if (inimigo_maxEnergia > 0) {
 			var chances = 5; 
@@ -109,29 +118,20 @@ for(var xx = 0; xx < cell_h; xx ++){
 			if(armas_max > 0){
 			var chances = 1;
 			var dist = 300; 
-				if (chancesArmas == 0)
-				{
-					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
-	
-					
-					armas_max -= 1;
-					}
-				}
-			
 				if (chancesArmas == 1)
 				{
-					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
-	
+					
+					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) 
+					{
 					instance_create_layer(x1, y1, "Instances", obj_pistolSolta);
 					armas_max -= 1;
 					}
 				}	
 				else if(chancesArmas == 2)
 				{
-					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
-	
+					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) 
+					{
 					instance_create_layer(x1, y1, "Weapons", obj_shotgunSolta);
-					
 					armas_max -= 1;
 					}
 				}

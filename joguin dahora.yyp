@@ -145,6 +145,7 @@
     {"id":{"name":"spr_projetil_Sniper","path":"sprites/spr_projetil_Sniper/spr_projetil_Sniper.yy",},},
     {"id":{"name":"spr_sangue_andando","path":"sprites/spr_sangue_andando/spr_sangue_andando.yy",},},
     {"id":{"name":"spr_chaveDeFendaProjetil","path":"sprites/spr_chaveDeFendaProjetil/spr_chaveDeFendaProjetil.yy",},},
+    {"id":{"name":"init","path":"scripts/init/init.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_screenshake","path":"objects/obj_screenshake/obj_screenshake.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},

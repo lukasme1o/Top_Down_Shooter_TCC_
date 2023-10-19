@@ -130,7 +130,7 @@ ds_map_add(armas[10],"drop",obj_sniperLoveSolta);
 #endregion
 
 
-
+range = 10;
 weapon_id = -1;
 weapon_dir = -1;
 weapon_x = 0;

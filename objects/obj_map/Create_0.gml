@@ -119,7 +119,7 @@ for(var xx = 0; xx < cell_h; xx ++){
 			//Sorteio das armas e colocar elas
 			if(armas_max > 0){
 			var chances = 1;
-			var dist = 300; 
+			var dist = 100; 
 				if (chancesArmas == 1)
 				{
 					

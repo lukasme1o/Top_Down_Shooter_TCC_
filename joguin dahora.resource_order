@@ -107,6 +107,7 @@
     {"name":"spr_energia_parado","order":1,"path":"sprites/spr_energia_parado/spr_energia_parado.yy",},
     {"name":"spr_projetil_Sniper","order":1,"path":"sprites/spr_projetil_Sniper/spr_projetil_Sniper.yy",},
     {"name":"spr_chaveDeFendaProjetil","order":3,"path":"sprites/spr_chaveDeFendaProjetil/spr_chaveDeFendaProjetil.yy",},
+    {"name":"init","order":3,"path":"scripts/init/init.yy",},
     {"name":"obj_screenshake","order":7,"path":"objects/obj_screenshake/obj_screenshake.yy",},
     {"name":"obj_minigamSolta","order":10,"path":"objects/obj_minigamSolta/obj_minigamSolta.yy",},
     {"name":"config_force","order":2,"path":"scripts/config_force/config_force.yy",},

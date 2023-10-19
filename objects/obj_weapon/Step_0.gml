@@ -61,7 +61,7 @@ if(instance_exists(weapon_id)){
 	
 	
 	function weapon_pickup(){
-	var range = 10;
+	
 	var inst = instance_nearest(x,y,obj_weapon_drop);
 		if(instance_exists(inst) and distance_to_object(obj_weapon_drop)<=range){
 		scr_mudar_arma(self, inst.weapon_index);

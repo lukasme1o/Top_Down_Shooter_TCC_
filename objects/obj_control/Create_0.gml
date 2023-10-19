@@ -1,12 +1,3 @@
-//font_pixel = font_add_sprite_ext(spr_gameFonte, "!,./0123456789:;=?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~ÇéâàçéîìÉôóûí", true, 0);
-
-//draw_set_font(font_pixel);
-
-global.contaSalas = 0;
-global.best = 0;
-
-
-
 passa_level = function(){
 
 
@@ -27,7 +18,6 @@ var _qtd_inimigos_esqueletos = instance_number(obj_esqueleto);
 
 
 
-global.pause = false;
 
 desenha_pause = function(){
 

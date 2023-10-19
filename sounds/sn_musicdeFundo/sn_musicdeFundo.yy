@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "sn_musicdeFundo",
+  "name": "sn_musicDeFundo",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -17,7 +17,7 @@
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sn_musicdeFundo.wav",
+  "soundFile": "sn_musicDeFundo.wav",
   "type": 0,
   "volume": 1.0,
 }

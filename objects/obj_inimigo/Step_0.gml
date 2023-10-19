@@ -59,7 +59,7 @@ if (life <= 0){
 	var morre = instance_create_depth(x,y,depth,obj_inimigo_morte);
 		morre.image_xscale = image_xscale;
 		morre.sprite_index = spr_energia_morte;
-		audio_play_sound(sns_morte, 1,0);
+		audio_play_sound(sns_morte, 1,false);
 		instance_destroy();
 		global.shake = 20;
 }

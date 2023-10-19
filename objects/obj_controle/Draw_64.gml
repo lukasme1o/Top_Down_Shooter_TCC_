@@ -11,10 +11,10 @@ var _maxvida = obj_player.max_vida;
 
 
 //Barra da Vida
-draw_sprite_ext(spr_hud_barra_vida, 0,0, _huda, (_vida/_maxvida) * _escala, _escala, 0, c_white, 1);
+draw_sprite_ext(spr_hud_barra_vida, 0,20, _huda, (_vida/_maxvida) * _escala, _escala, 0, c_white, 1);
 
 
 //HUD
-draw_sprite_ext(spr_hud_vida, 0, 0, _huda, _escala, _escala, 0, c_white, 1);
+draw_sprite_ext(spr_hud_vida, 0, 20, _huda, _escala, _escala, 0, c_white, 1);
 
 }

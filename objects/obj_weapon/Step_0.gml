@@ -37,7 +37,7 @@ if(instance_exists(weapon_id)){
 			proj_inst.image_angle = dir;
 			proj_inst.speed = proj_spd;
 			proj_inst.damage = proj_damage;
-			audio_play_sound(sns_somTiro,1,0);
+			audio_play_sound(sns_somTiro,1,false);
 		}
 	
 	can_shoot = false;

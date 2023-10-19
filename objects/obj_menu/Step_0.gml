@@ -1,0 +1,1 @@
+//audio_play_sound(sn_musicDeFundo,10,true);

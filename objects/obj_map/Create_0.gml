@@ -23,7 +23,7 @@ var inimigo_maxEnergia = 5;
 var inimigo_maxMorte = 10;
 
 var armas_max = 1;
-var chancesArmas = irandom(15);
+var chancesArmas = irandom(11);
 
 
 var chao_index = 17;
@@ -34,6 +34,7 @@ sul = 8;
 
 var tiles_layer = layer_tilemap_get_id("WallTiles")
 
+//Mapa Procedural
 for (var i = 0; i<passos; i+=1){
 			
 	if(irandom(chances) == chances){
@@ -84,11 +85,12 @@ for(var xx = 0; xx < cell_h; xx ++){
 			var y1 = yy *cell_t + cell_t/2;
 			
 	
-			//Criar Objetos
+			//Criar Objeto Player
 			if(player = false){
 			
 			instance_create_layer(x1, y1, "Instances",obj_player_spawn);
 			player = true;
+			
 			}
 			
 			

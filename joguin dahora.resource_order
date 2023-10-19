@@ -36,6 +36,7 @@
     {"name":"Testes","order":1,"path":"folders/Sprites/Testes.yy",},
     {"name":"Wall_Tiles","order":2,"path":"folders/Sprites/Wall_Tiles.yy",},
     {"name":"Tile Sets","order":16,"path":"folders/Tile Sets.yy",},
+    {"name":"Sangue","order":3,"path":"folders/Sprites/Inimigos/Sangue.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_uzi","order":5,"path":"objects/obj_uzi/obj_uzi.yy",},
@@ -79,6 +80,7 @@
     {"name":"sns_somTiro","order":5,"path":"sounds/sns_somTiro/sns_somTiro.yy",},
     {"name":"obj_sniperSolta","order":13,"path":"objects/obj_sniperSolta/obj_sniperSolta.yy",},
     {"name":"obj_control","order":5,"path":"objects/obj_control/obj_control.yy",},
+    {"name":"spr_akGhostSolta","order":8,"path":"sprites/spr_akGhostSolta/spr_akGhostSolta.yy",},
     {"name":"spr_chaveDeFenda","order":3,"path":"sprites/spr_chaveDeFenda/spr_chaveDeFenda.yy",},
     {"name":"obj_map","order":1,"path":"objects/obj_map/obj_map.yy",},
     {"name":"obj_akSerpert","order":7,"path":"objects/obj_akSerpert/obj_akSerpert.yy",},
@@ -91,6 +93,8 @@
     {"name":"spr_energia_morte","order":2,"path":"sprites/spr_energia_morte/spr_energia_morte.yy",},
     {"name":"spr_bananSolta","order":1,"path":"sprites/spr_bananSolta/spr_bananSolta.yy",},
     {"name":"spr_sniperLove","order":10,"path":"sprites/spr_sniperLove/spr_sniperLove.yy",},
+    {"name":"spr_sangue_morte","order":2,"path":"sprites/spr_sangue_morte/spr_sangue_morte.yy",},
+    {"name":"spr_sangue_parado","order":1,"path":"sprites/spr_sangue_parado/spr_sangue_parado.yy",},
     {"name":"obj_telaMorte","order":1,"path":"objects/obj_telaMorte/obj_telaMorte.yy",},
     {"name":"obj_sniper","order":3,"path":"objects/obj_sniper/obj_sniper.yy",},
     {"name":"obj_chaveDeFendaSolta","order":15,"path":"objects/obj_chaveDeFendaSolta/obj_chaveDeFendaSolta.yy",},
@@ -122,6 +126,6 @@
     {"name":"obj_player_spawn","order":2,"path":"objects/obj_player_spawn/obj_player_spawn.yy",},
     {"name":"spr_pistol","order":5,"path":"sprites/spr_pistol/spr_pistol.yy",},
     {"name":"spr_sniperSolta","order":2,"path":"sprites/spr_sniperSolta/spr_sniperSolta.yy",},
-    {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
+    {"name":"rm_map","order":1,"path":"rooms/rm_map/rm_map.yy",},
   ],
 }

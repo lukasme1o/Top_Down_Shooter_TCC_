@@ -1,10 +1,9 @@
-font_pixel = font_add_sprite_ext(spr_gameFonte, "!,./0123456789:;=?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~ÇéâàçéîìÉôóûí", true, 0);
+//font_pixel = font_add_sprite_ext(spr_gameFonte, "!,./0123456789:;=?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~ÇéâàçéîìÉôóûí", true, 0);
 
-draw_set_font(font_pixel);
-
+//draw_set_font(font_pixel);
 
 global.contaSalas = 0;
-global.best = global.contaSalas;
+global.best = 0;
 
 
 
@@ -20,10 +19,10 @@ var _qtd_inimigos_esqueletos = instance_number(obj_esqueleto);
 	{
 		
 	global.contaSalas++;
-	
-	global.best = global.contaSalas;
+
 	room_restart();	
 	}	
+	
 }
 
 
@@ -40,10 +39,6 @@ desenha_pause = function(){
 
 }
 
-if (room == rm_inicio)
-{
-    audio_play_sound(sn_musicdeFundo, 100, 200);
-}
 
 
 

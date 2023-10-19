@@ -25,7 +25,7 @@ for(var i = 0; i < op_max; i++){
 		index = i;
 		if(mouse_check_button_pressed(mb_left)){
 				if (index = 0){
-				room_goto(Room2);
+				room_goto(rm_map);
 				}
 				if (index = 1){
 				room_goto(rm_controles);

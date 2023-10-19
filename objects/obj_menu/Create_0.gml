@@ -1,5 +1,7 @@
 
-options = ["Jogar", "Controles", "Best: ", "Sair"];
+var _best = 0;
+
+options = ["Jogar", "Controles", "Best: "+ string(_best), "Sair"];
 op_max = array_length(options);
 index = 0;
 

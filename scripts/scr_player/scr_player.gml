@@ -54,33 +54,6 @@ move_dir = point_direction(0,0, direita - esquerda, baixo - cima);
 
 #endregion
 
-#region Pegar Armas
-/*
-	with(my_weapon){
-		
-	var mb;
-	var key_drop = keyboard_check_pressed(ord("F"));
-	
-	if(automatic){
-		mb= mouse_check_button(mb_left);
-	}else{
-		mb = mouse_check_button_pressed(mb_left);
-	}
-	
-	weapon_dir = point_direction(x, y, mouse_x, mouse_y );
-	if(mb){
-	atirar();
-	}
-	
-	if(key_drop and weapon != 0 ){
-		weapon_drop();
-	}
-	else if (key_drop and weapon == 0){
-		weapon_pick()
-	}
-}*/
-
-#endregion
 
 //Morte do Player
 if (vida <= 0){
@@ -90,6 +63,8 @@ if (vida <= 0){
 		morre.sprite_index = spr_mortePlayer;
 		audio_play_sound(sn_playerMorte, 2, 0);
 		game_restart();
+		instance_destroy();
+	
 }
 
 }

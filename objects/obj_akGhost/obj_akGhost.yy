@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_akGhost",
-    "path": "sprites/spr_akGhost/spr_akGhost.yy",
+    "name": "spr_akGhostSolta",
+    "path": "sprites/spr_akGhostSolta/spr_akGhostSolta.yy",
   },
   "spriteMaskId": null,
   "visible": true,

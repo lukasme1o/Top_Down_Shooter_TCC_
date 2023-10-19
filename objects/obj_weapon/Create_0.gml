@@ -126,9 +126,18 @@ ds_map_add(armas[10],"proj_delay",200);
 ds_map_add(armas[10],"automatic",false);
 ds_map_add(armas[10],"drop",obj_sniperLoveSolta);
 
+//Matagua
+armas[11] =ds_map_create();
+ds_map_add(armas[11],"sprite",spr_matagua);
+ds_map_add(armas[11],"proj",spr_projetil_matagua);
+ds_map_add(armas[11],"proj_count",7);
+ds_map_add(armas[11],"proj_spd",2);
+ds_map_add(armas[11],"proj_damage",1);
+ds_map_add(armas[11],"proj_delay",2);
+ds_map_add(armas[11],"automatic",true);
+ds_map_add(armas[11],"drop",obj_matagua);
 
 #endregion
-
 
 range = 10;
 weapon_id = -1;
@@ -136,5 +145,7 @@ weapon_dir = -1;
 weapon_x = 0;
 weapon_y = 0;
 can_shoot = true;
+recoil = 0;
 
-scr_mudar_arma(self, 0);
+
+scr_mudar_arma(self, 11);

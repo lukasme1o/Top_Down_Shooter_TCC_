@@ -119,17 +119,27 @@ for(var xx = 0; xx < cell_h; xx ++){
 			//Sorteio das armas e colocar elas
 			if(armas_max > 0){
 			var chances = 1;
-			var dist = 100; 
+			var dist = 50; 
+			
+				if (chancesArmas == 0)
+				{
+					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) 
+					{
+					instance_create_layer(x1, y1, "Instances", obj_matagua);
+					armas_max -= 1;
+					}
+				}
+				
 				if (chancesArmas == 1)
 				{
-					
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) 
 					{
 					instance_create_layer(x1, y1, "Instances", obj_pistolSolta);
 					armas_max -= 1;
 					}
 				}	
-				else if(chancesArmas == 2)
+				
+				if(chancesArmas == 2)
 				{
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) 
 					{
@@ -137,7 +147,8 @@ for(var xx = 0; xx < cell_h; xx ++){
 					armas_max -= 1;
 					}
 				}
-				else if(chancesArmas == 3)
+				
+				if(chancesArmas == 3)
 				{
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
 	
@@ -146,7 +157,8 @@ for(var xx = 0; xx < cell_h; xx ++){
 					armas_max -= 1;
 					}
 				}
-				else if(chancesArmas == 4)
+				
+				if(chancesArmas == 4)
 				{
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
 	
@@ -155,7 +167,8 @@ for(var xx = 0; xx < cell_h; xx ++){
 					armas_max -= 1;
 					}
 				}
-				else if(chancesArmas == 5)
+				
+				if(chancesArmas == 5)
 				{
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
 	
@@ -164,7 +177,8 @@ for(var xx = 0; xx < cell_h; xx ++){
 					armas_max -= 1;
 					}
 				}
-				else if(chancesArmas == 6)
+				
+				if(chancesArmas == 6)
 				{
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
 	
@@ -173,7 +187,8 @@ for(var xx = 0; xx < cell_h; xx ++){
 					armas_max -= 1;
 					}
 				}
-				else if(chancesArmas == 7)
+				
+				if(chancesArmas == 7)
 				{
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
 	
@@ -182,7 +197,8 @@ for(var xx = 0; xx < cell_h; xx ++){
 					armas_max -= 1;
 					}
 				}
-				else if(chancesArmas == 8)
+				
+				if(chancesArmas == 8)
 				{
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
 	
@@ -191,7 +207,8 @@ for(var xx = 0; xx < cell_h; xx ++){
 					armas_max -= 1;
 					}
 				}
-				else if(chancesArmas == 9)
+				
+				if(chancesArmas == 9)
 				{
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
 	
@@ -200,7 +217,8 @@ for(var xx = 0; xx < cell_h; xx ++){
 					armas_max -= 1;
 					}
 				}
-				else if(chancesArmas == 10)
+				
+				if(chancesArmas == 10)
 				{
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
 	
@@ -208,7 +226,8 @@ for(var xx = 0; xx < cell_h; xx ++){
 					armas_max -= 1;
 					}
 				}
-				else if(chancesArmas == 11)
+				
+				if(chancesArmas == 11)
 				{
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) {
 	
@@ -217,6 +236,7 @@ for(var xx = 0; xx < cell_h; xx ++){
 					armas_max -= 1;
 					}
 				}
+				
 			#endregion
 				
 			}

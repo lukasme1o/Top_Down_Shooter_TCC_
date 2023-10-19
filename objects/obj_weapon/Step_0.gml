@@ -1,17 +1,25 @@
 if(instance_exists(weapon_id)){
 	
+	//Colocar a arma na Player
 	x = weapon_id.x;
 	y = weapon_id.y;
 	
+	//Não deixar grudado arma no player
 	weapon_x = x + lengthdir_x(16,weapon_dir);
 	weapon_y = y + lengthdir_y(16,weapon_dir);
 
+	//Ajustar o ângulo da arma
 	image_angle = weapon_dir;
 	
-	if(image_angle >= 90 and image_angle <= 270){
+	//Se a arma for maior que 90 graus e menos que 270 graus, arma não muda a imagem
+	if(image_angle >= 90 and image_angle <= 270)
+	{
 		image_yscale = -1;	
 	
-	}else{
+	}
+	//Se não, muda o ângulo
+	else
+	{
 		image_yscale = 1;
 	}
 
@@ -19,10 +27,12 @@ if(instance_exists(weapon_id)){
 	function atirar(){
 	//Vamos Atirar
 	
+	//Se ele tiver com a arma(id), ele pode atirar
 	if(!weapon>0){
 		return false;
 	}
 	
+	//Se não, ele não pode atirar
 	if(!can_shoot){
 		return false;
 	}
@@ -40,6 +50,7 @@ if(instance_exists(weapon_id)){
 			audio_play_sound(sns_somTiro,1,false);
 		}
 	
+	recoil = 8;
 	can_shoot = false;
 	alarm[0] = proj_delay;
 
@@ -55,7 +66,7 @@ if(instance_exists(weapon_id)){
 		inst.direction = weapon_dir;
 		inst.speed = 3;		
 		scr_mudar_arma(self, 0);
-		show_debug_message("Armas no chão");
+		
 		
 	}
 	
@@ -66,11 +77,16 @@ if(instance_exists(weapon_id)){
 		if(instance_exists(inst) and distance_to_object(obj_weapon_drop)<=range){
 		scr_mudar_arma(self, inst.weapon_index);
 		instance_destroy(inst);
-			
 		}
+			
 	}
 
-}else{
+	recoil= lerp(recoil,0,.1);
+
+}
+
+else
+{
 	instance_destroy();
 }
 

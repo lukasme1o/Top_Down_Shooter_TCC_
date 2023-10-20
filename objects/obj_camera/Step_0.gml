@@ -1,7 +1,10 @@
+//Verifica se existe
 if(instance_exists(obj_player))
 {
 	
-	if(instance_exists(target)){
+	//Animação da cama movimentando
+	if(instance_exists(target))
+	{
 		x = lerp(x, target.x - cam_largura / 2 , cam_veloc);
 		y = lerp(y, target.y - cam_altura /2, cam_veloc);
 	
@@ -10,6 +13,7 @@ if(instance_exists(obj_player))
 	
 		camera_set_view_pos(view_camera[0],x,y);
 	}
+	
 	else 
 	{
 		target = -1;

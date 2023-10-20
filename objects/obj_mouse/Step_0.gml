@@ -27,3 +27,6 @@ else
 	image_alpha = 1;
 	invisible_Timer = invisible_Time;
 }
+
+depth -= y;
+

@@ -101,7 +101,7 @@ ds_map_add(armas[8],"proj_count",1);
 ds_map_add(armas[8],"proj_spd",20);
 ds_map_add(armas[8],"proj_damage",1);
 ds_map_add(armas[8],"proj_delay",1);
-ds_map_add(armas[8],"automatic",true);
+ds_map_add(armas[8],"automatic",false);
 ds_map_add(armas[8],"drop",obj_chaveDeFendaSolta);
 
 //Uzi
@@ -137,15 +137,38 @@ ds_map_add(armas[11],"proj_delay",2);
 ds_map_add(armas[11],"automatic",true);
 ds_map_add(armas[11],"drop",obj_matagua);
 
+//Espingarda
+armas[12] =ds_map_create();
+ds_map_add(armas[12],"sprite",spr_espingarda);
+ds_map_add(armas[12],"proj",spr_projeteis);
+ds_map_add(armas[12],"proj_count",3);
+ds_map_add(armas[12],"proj_spd",10);
+ds_map_add(armas[12],"proj_damage",5);
+ds_map_add(armas[12],"proj_delay",10);
+ds_map_add(armas[12],"automatic",false);
+ds_map_add(armas[12],"drop",obj_espingarda);
+
 #endregion
 
+//Range para poder pegar a arma
 range = 10;
+
+//id da arma
 weapon_id = -1;
+
+//Direção quando você apontar
 weapon_dir = -1;
+
+//Arma no local x
 weapon_x = 0;
+//Arma no local y
 weapon_y = 0;
+
+//Se pode atirar
 can_shoot = true;
+
+//Recoil da arma variavel
 recoil = 0;
 
-
-scr_mudar_arma(self, 11);
+//Função Muda Arma
+scr_mudar_arma(self, 1);

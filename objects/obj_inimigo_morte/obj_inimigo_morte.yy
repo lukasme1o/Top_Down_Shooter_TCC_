@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Inimgos",
-    "path": "folders/Objetos/Inimgos.yy",
+    "name": "Controles",
+    "path": "folders/Objetos/Controles.yy",
   },
   "parentObjectId": null,
   "persistent": false,

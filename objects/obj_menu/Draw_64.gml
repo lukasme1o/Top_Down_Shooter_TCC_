@@ -31,7 +31,6 @@ for(var i = 0; i < op_max; i++){
 				room_goto(rm_controles);
 				}
 				if (index = 2){
-				room_goto(rm_morte);
 				}
 				if (index = 3){
 

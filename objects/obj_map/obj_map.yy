@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Mapas",
-    "path": "folders/Objetos/Mapas.yy",
+    "name": "joguin dahora",
+    "path": "joguin dahora.yyp",
   },
   "parentObjectId": null,
   "persistent": false,

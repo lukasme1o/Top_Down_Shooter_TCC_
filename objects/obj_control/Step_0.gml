@@ -8,6 +8,8 @@ global.pause = !global.pause;
 
 }
 
+
+
 if(global.pause){
 
 	if(instance_exists(obj_inimigo) and instance_exists(obj_esqueleto)){
@@ -19,5 +21,9 @@ if(global.pause){
 			}
 	}
 
-	
+}
+
+with(all)
+{
+	depth = bbox_bottom;
 }

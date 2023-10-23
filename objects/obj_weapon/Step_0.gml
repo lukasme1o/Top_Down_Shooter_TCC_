@@ -37,7 +37,7 @@ if(instance_exists(weapon_id)){
 		return false;
 	}
 	
-	
+	//Repetição para atirar
 	for (var i = 0; i < proj_count; i++){
 			var proj_inst = instance_create_layer(weapon_x,weapon_y , "Projeteis", obj_proj);
 			proj_inst.sprite_index = proj;
@@ -50,29 +50,34 @@ if(instance_exists(weapon_id)){
 			audio_play_sound(sns_somTiro,1,false);
 		}
 	
+	//Recoil da Arma
 	recoil = 8;
 	can_shoot = false;
+	//Delay da arma
 	alarm[0] = proj_delay;
 
 	
 	}
 	
+	//Função dropa arma
 	function weapon_drop(){
+		//Se ele estiver com arma
 		if(!weapon > 0 ){
 			return false;
 		}
+		//cria a arma
 		var inst = instance_create_layer(weapon_x, weapon_y , "Instances", drop);
+		//Angulo da arma
 		inst.image_angle = weapon_dir;
 		inst.direction = weapon_dir;
-		inst.speed = 3;		
+		//Velocidade que ela sai da mão
+		inst.speed = 3;	
+		//Muda a arma para 0 = sem arma
 		scr_mudar_arma(self, 0);
-		
-		
 	}
 	
-	
+	//Função pega arma
 	function weapon_pickup(){
-	
 	var inst = instance_nearest(x,y,obj_weapon_drop);
 		if(instance_exists(inst) and distance_to_object(obj_weapon_drop)<=range){
 		scr_mudar_arma(self, inst.weapon_index);

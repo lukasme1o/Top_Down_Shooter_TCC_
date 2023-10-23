@@ -72,6 +72,7 @@
     {"id":{"name":"spr_hud_barra_vida","path":"sprites/spr_hud_barra_vida/spr_hud_barra_vida.yy",},},
     {"id":{"name":"sn_musicDeFundo","path":"sounds/sn_musicDeFundo/sn_musicDeFundo.yy",},},
     {"id":{"name":"obj_shotgunSolta","path":"objects/obj_shotgunSolta/obj_shotgunSolta.yy",},},
+    {"id":{"name":"spr_sombraArma","path":"sprites/spr_sombraArma/spr_sombraArma.yy",},},
     {"id":{"name":"obj_banana","path":"objects/obj_banana/obj_banana.yy",},},
     {"id":{"name":"spr_morte_esqueleto","path":"sprites/spr_morte_esqueleto/spr_morte_esqueleto.yy",},},
     {"id":{"name":"scr_player","path":"scripts/scr_player/scr_player.yy",},},

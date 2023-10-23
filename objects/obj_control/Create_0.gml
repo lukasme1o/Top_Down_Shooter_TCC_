@@ -4,10 +4,11 @@ passa_level = function(){
 var _qtd_inimigos = instance_number(obj_inimigo);
 var _qtd_inimigos_esqueletos = instance_number(obj_esqueleto);
 var _qtd_inimigos_sangue = instance_number(obj_inimigo_sangue);
+var _qtd_inimigos_conhecimentos = instance_number(obj_inimigo_conhecimento);
 
 	
 	//Verifica se tem inimigos na sala
-	if(_qtd_inimigos <= 0 and _qtd_inimigos_esqueletos <=0 and _qtd_inimigos_sangue <= 0)
+	if(_qtd_inimigos <= 0 and _qtd_inimigos_esqueletos <=0 and _qtd_inimigos_sangue <= 0 and _qtd_inimigos_conhecimentos <=0)
 	{
 	
 	//Adiciona na variavél global
@@ -17,6 +18,7 @@ var _qtd_inimigos_sangue = instance_number(obj_inimigo_sangue);
 	}	
 	
 }
+
 
 
 

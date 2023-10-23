@@ -1,7 +1,13 @@
+//Pega a fonte
 draw_set_font(fnt_pixel);
+//Transforma a variavel em string
 var salas_texto = string(round(global.contaSalas));
+var morte_text = string(round(global.inimigosMortes))
 
+//Pontuação
 draw_text_transformed(150,55, "Salas Concluídas: " + salas_texto, 2,2,0);
+draw_text_transformed(175,80, "Inimigos Derrotados: " + morte_text, 2,2,0);
+
 
 
 #region Pause
@@ -15,7 +21,6 @@ if(global.pause)
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	var text = "Jogo Pausado"; 
-	draw_sprite_ext(spr_teclaM, 0 , x + 20, y + 20, 2,2,0, c_white,1);
 	draw_text_ext(680, 393,text, 20, 300);
 	
 	

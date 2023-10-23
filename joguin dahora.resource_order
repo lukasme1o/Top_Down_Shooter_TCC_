@@ -47,6 +47,7 @@
     {"name":"spr_uzi","order":8,"path":"sprites/spr_uzi/spr_uzi.yy",},
     {"name":"sn_musicDeFundo","order":4,"path":"sounds/sn_musicDeFundo/sn_musicDeFundo.yy",},
     {"name":"obj_shotgunSolta","order":12,"path":"objects/obj_shotgunSolta/obj_shotgunSolta.yy",},
+    {"name":"spr_sombraArma","order":6,"path":"sprites/spr_sombraArma/spr_sombraArma.yy",},
     {"name":"obj_banana","order":18,"path":"objects/obj_banana/obj_banana.yy",},
     {"name":"spr_morte_esqueleto","order":1,"path":"sprites/spr_morte_esqueleto/spr_morte_esqueleto.yy",},
     {"name":"spr_mataguaSolta","order":11,"path":"sprites/spr_mataguaSolta/spr_mataguaSolta.yy",},

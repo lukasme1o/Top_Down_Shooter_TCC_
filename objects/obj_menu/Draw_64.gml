@@ -27,6 +27,7 @@ for(var i = 0; i < op_max; i++){
 				if (index = 0){
 				room_goto(rm_map);
 				global.contaSalas = 0;
+				global.inimigosMortes = 0;
 				}
 				if (index = 1){
 				room_goto(rm_controles);

@@ -53,7 +53,8 @@ hit_alpha = lerp(hit_alpha,0,0.1);
 
 	if (life <= 0){
 
-		var morre = instance_create_depth(x,y,depth,obj_inimigo_morte);
+			global.inimigosMortes++;
+			var morre = instance_create_depth(x,y,depth,obj_inimigo_morte);
 			morre.image_xscale = image_xscale;
 			morre.sprite_index = spr_morte_esqueleto;
 			audio_play_sound(sns_morte, 1,false);

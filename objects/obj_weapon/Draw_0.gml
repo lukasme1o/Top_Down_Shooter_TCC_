@@ -1,3 +1,4 @@
+//Sprite da arma
 if(sprite != -1){
 
 //Recoil da Arma
@@ -14,7 +15,7 @@ var inst = instance_nearest(x,y,obj_weapon_drop);
 if(instance_exists(inst) and distance_to_object(obj_weapon_drop)<=range){
 	with (inst){
 		
-
+		
 		draw_sprite(spr_mouse_direito,image_index, x+5,y-5);
 	
 

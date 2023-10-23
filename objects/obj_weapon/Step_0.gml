@@ -1,3 +1,4 @@
+//Se o player estiver com arma
 if(instance_exists(weapon_id)){
 	
 	//Colocar a arma na Player
@@ -85,13 +86,14 @@ if(instance_exists(weapon_id)){
 		}
 			
 	}
-
+	//Recoi da arma
 	recoil= lerp(recoil,0,.1);
 
 }
 
 else
 {
+	//Destroi o objeto
 	instance_destroy();
 }
 

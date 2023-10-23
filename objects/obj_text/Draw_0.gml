@@ -1,8 +1,6 @@
 
-
-
-
 draw_self();
+
 var text = "Olá, para poder jogar o paranormal world, é muito simples. Para se movimentar, aperte as teclas W,S,D,A. Para poder atirar e derrotar seus inimigos, aperte o botão esquerdo do mouse, e para dropar a arma e pegar aperte o botão direito do mouse. Se divirta com meu jogo" ; 
 draw_text_ext_transformed_color(x + 20, y + 20, text, 50, 500, 2,2,0,c_white,c_white,c_white,c_white,1);
 
@@ -37,7 +35,6 @@ for(var i = 0; i < op_max; i++){
 				if (index = 0){
 					room_goto(rm_inicio);
 				}
-
 		}
 		}else{
 			draw_set_color(c_white);

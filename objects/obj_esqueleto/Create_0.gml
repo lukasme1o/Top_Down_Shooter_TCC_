@@ -11,5 +11,3 @@ life = 40;
 
 hit_color = c_white;
 
-dano = 10;
-

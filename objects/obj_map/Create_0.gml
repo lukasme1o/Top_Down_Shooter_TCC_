@@ -26,7 +26,8 @@ player = false;
 //Inimigos
 var inimigo_maxEnergia = 5;
 var inimigo_maxMorte = 10;
-var inimigo_maxSangue = 1;
+var inimigo_maxSangue = 2;
+var inimigos_maxConhecimento = 10;
 
 //Armas
 var armas_max = 1;
@@ -117,7 +118,7 @@ for(var xx = 0; xx < cell_h; xx ++)
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) 
 					{
 						instance_create_layer(x1, y1, "Instances", obj_inimigo);
-						inimigo_maxEnergia -=1;
+						inimigo_maxEnergia --;
 					}
 			
 			if (inimigo_maxMorte > 0) 
@@ -127,7 +128,7 @@ for(var xx = 0; xx < cell_h; xx ++)
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) 
 					{
 						instance_create_layer(x1, y1, "Instances", obj_esqueleto);
-						inimigo_maxMorte -=1;	
+						inimigo_maxMorte --;	
 					}
 			}
 			
@@ -138,7 +139,17 @@ for(var xx = 0; xx < cell_h; xx ++)
 					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) 
 					{
 						instance_create_layer(x1, y1, "Instances", obj_inimigo_sangue);
-						inimigo_maxMorte -=1;	
+						inimigo_maxSangue--;	
+					}
+			}
+			if (inimigos_maxConhecimento > 0) 
+			{
+				var chances = 5; 
+				var dist = 270;
+					if (irandom(chances) == chances and point_distance(x1 ,y1, obj_player.x, obj_player.y )	> dist) 
+					{
+						instance_create_layer(x1, y1, "Instances", obj_inimigo_conhecimento);
+						inimigos_maxConhecimento--;	
 					}
 			}
 			

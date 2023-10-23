@@ -12,11 +12,11 @@ exit;
 	
 	//Estado do Inimigo
 	//Estado Parado
-	switch(estado)
-	{
+	switch(estado){
 	case "parado":
 	if(instance_exists(obj_player))
 	{
+		
 		//Pixel para começar a seguir o player
 		var range = 150;
 		
@@ -34,11 +34,12 @@ exit;
 	
 	//Estado Seguidno Jogador
 	case "seguindo_jogador": 
+	
 	//Verificação do Player existir
 	if(instance_exists(obj_player))
 	{
 		//Sprite do Inimigo
-		sprite_index = spr_energia_andando;
+		sprite_index = spr_inimigo_conhecimento_andando;
 		target_x = obj_player.x;
 		target_y = obj_player.y;
 	}
@@ -76,7 +77,7 @@ hit_alpha = lerp(hit_alpha,0,0.1);
 
 		var morre = instance_create_depth(x,y,depth,obj_inimigo_morte);
 			morre.image_xscale = image_xscale;
-			morre.sprite_index = spr_energia_morte;
+			morre.sprite_index = spr_inimigo_conhecimento_morte;
 			audio_play_sound(sns_morte, 1,false);
 			instance_destroy();
 			global.shake = 20;
@@ -84,4 +85,3 @@ hit_alpha = lerp(hit_alpha,0,0.1);
 	}	
 	
 #endregion
-

@@ -1,5 +1,5 @@
 with(other){
 
-	vida -= 1;
+	vida -= 3;
 
 }

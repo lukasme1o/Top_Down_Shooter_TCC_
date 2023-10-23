@@ -121,7 +121,7 @@ ds_map_add(armas[10],"sprite",spr_sniperLove);
 ds_map_add(armas[10],"proj",spr_projetil_Sniper);
 ds_map_add(armas[10],"proj_count",1);
 ds_map_add(armas[10],"proj_spd",20);
-ds_map_add(armas[10],"proj_damage",75);
+ds_map_add(armas[10],"proj_damage",500);
 ds_map_add(armas[10],"proj_delay",200);
 ds_map_add(armas[10],"automatic",false);
 ds_map_add(armas[10],"drop",obj_sniperLoveSolta);
@@ -171,4 +171,4 @@ can_shoot = true;
 recoil = 0;
 
 //Função Muda Arma
-scr_mudar_arma(self, 1);
+scr_mudar_arma(self, 0);

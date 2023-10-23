@@ -11,10 +11,8 @@ hit_alpha = 0;
 hit_color = c_white;
 
 //Vida
-life = 50;
+life = 100;
 
-//Dano do Inimigo
-dano = 1;
 
 
 

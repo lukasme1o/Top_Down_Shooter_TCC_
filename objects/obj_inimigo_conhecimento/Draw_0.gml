@@ -1,5 +1,5 @@
 //Sombra
-draw_sprite(spr_sombraEsqueleto,0,x,y + sprite_height/2);
+draw_sprite(spr_sombra,0,x,y + sprite_height/2);
 
 //Desenha
 draw_self();
